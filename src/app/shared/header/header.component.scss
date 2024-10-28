@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 15px; /* Espaço entre logo e título */
+  padding: 10px; /* Espaço interno geral */
+}
+
+.logo-image {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Imagem redonda */
+}
+
+.title {
+  margin: 0; /* Remove margens padrão do h1 */
+  font-size: 2rem; /* Ajusta o tamanho do texto */
+}
+
+  .spacer {
+    flex: 1;
+  }
+
+  .menu button {
+    font-size: 16px;
+    color: rgb(109, 159, 230);
+    margin: 0 8px;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    .mobile-menu-icon {
+      display: inline-block;
+    }
+}
+.drawer-container {
+  height: 100%;
+  .drawer {
+    width: 250px;
+    background-color: #ffffff;
+  }
+}
+
+  

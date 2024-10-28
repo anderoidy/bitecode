@@ -1,1 +1,35 @@
-<p>header works!</p>
+
+<mat-toolbar color="primary" class="header-toolbar">
+<div class="header">
+  <span class="logo">
+    <img src="assets/logoredondo.jpeg" alt="Bitecode" class="logo-image" />
+  </span>
+  <h1 class="title">Bitecode</h1>
+</div>
+
+
+  <span class="spacer"></span>
+
+  <nav class="menu">
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/services">Serviços</button>
+    <button mat-button routerLink="/portfolio">Portfólio</button>
+    <button mat-button routerLink="/sobre">Sobre</button>
+    <button mat-button routerLink="/contato">Contato</button>
+  </nav>
+
+  <button mat-icon-button class="mobile-menu-icon" (click)="toggleDrawer()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-drawer-container class="drawer-container" *ngIf="drawerOpened">
+    <mat-drawer #drawer mode="over" opened="true" class="drawer">
+      <button mat-button (click)="drawer.toggle()">Fechar</button>
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/services">Serviços</button>
+      <button mat-button routerLink="/portfolio">Portfólio</button>
+      <button mat-button routerLink="/about">Sobre</button>
+      <button mat-button routerLink="/contact">Contato</button>
+    </mat-drawer>
+  </mat-drawer-container>
+</mat-toolbar>

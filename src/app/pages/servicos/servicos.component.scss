@@ -1,0 +1,66 @@
+.services {
+    padding: 40px 20px; // Mais espaçamento
+    background-color: #e9ecef; // Fundo diferente para destacar
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Arial', sans-serif; // Fonte diferente
+      color: #333; // Cor do título
+    }
+  
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .service-card {
+        background-color: #fff;
+        border: 2px solid #007bff; // Borda colorida
+        border-radius: 10px; // Bordas arredondadas
+        padding: 20px; // Mais espaçamento interno
+        margin: 15px; // Mais espaçamento entre cartões
+        width: 280px; // Largura maior
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s; // Efeito de hover mais suave
+  
+        &:hover {
+          transform: translateY(-5px); // Leve elevação
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); // Sombras mais fortes
+        }
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px; // Bordas arredondadas para a imagem
+        }
+  
+        h3 {
+          margin: 20px 0 15px;
+          color: #007bff; // Cor do título dos serviços
+        }
+  
+        p {
+          font-size: 16px; // Tamanho maior para a descrição
+          color: #555;
+        }
+  
+        .btn {
+          display: inline-block;
+          padding: 12px 18px;
+          background-color: #007bff;
+          color: white;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.4s, transform 0.3s; // Efeito de hover
+  
+          &:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); // Aumenta o botão no hover
+          }
+        }
+      }
+    }
+  }
+  
