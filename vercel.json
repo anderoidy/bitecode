@@ -1,6 +1,12 @@
 {
   "build": {
-    "command": "ng build"
+    "command": "ng build --prod",
+    "output": "dist/bitecode-app"
   },
-  "output": "dist/bitecode-app"
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
