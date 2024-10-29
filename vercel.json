@@ -2,5 +2,5 @@
   "build": {
     "command": "ng build"
   },
-  "output": "dist/<nome-do-seu-projeto>"
+  "output": "dist/bitecode-app"
 }
