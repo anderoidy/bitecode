@@ -9,7 +9,7 @@
   "architect": {
   "build": {
     "options": {
-      "outputPath": "dist/seu-projeto"
+     "outputPath": "dist/bitecode-app"
     }
   }
 },
