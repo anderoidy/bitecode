@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/bitecode-app", 
     "ignore": [
       "firebase.json",
       "**/.*",
